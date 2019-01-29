@@ -23,6 +23,7 @@ mkdir /var/lock/apache2
 mkdir /var/run/apache2
 /usr/sbin/apache2ctl -D FOREGROUND
 
+mkdir /opt/startup
 echo "$@" > /opt/startup/startupCommand
 
 STARTUPCOMMAND=$(cat /opt/startup/startupCommand)
